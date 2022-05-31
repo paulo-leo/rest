@@ -1,0 +1,31 @@
+{
+    "name": "paulo-leo/nopake",
+    "type": "project",
+    "description": "Desenvolvimento web progressivo",
+    "keywords": [
+        "framework",
+        "phprest",
+		"nopake",
+		"PHP",
+		"routes",
+		"api"
+    ],
+    "license": "MIT",
+    "require": {
+	    "php": "^7.0.0",
+		"phpmailer/phpmailer": "~6.1"
+    },
+    "scripts": {
+	   "np-server":"php -S localhost:8080 public/index.php",
+	   "np-8000":"php -S 0.0.0.0:8000 public/index.php",
+	   "np":"php nopadi/CLI/nopadi.php"
+	},
+	"autoload" : {
+	    "psr-4":{
+		  "Core\\":"core/",
+		  "Dafault\\":"dafault/",
+		  "Modules\\":"modules/",
+		  "App\\":"app/"
+		}
+    }
+}

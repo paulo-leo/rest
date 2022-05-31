@@ -1,0 +1,34 @@
+
+@include('header')
+<div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="{{asset('logo.png')}}" style="width:150px">
+      </a>
+    </header>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Seja Bem-vindo ao Nopake!</h1>
+        <p class="col-md-8 fs-4">Nopake é um microframework escrito em PHP com foco em MVC. O Nopake utiliza uma sintaxe de template chamado VH para renderização da UI.</p>
+        <a class="btn btn-success btn-lg" type="button">Documentação</a>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Componentes</h2>
+          <p>Use componentes para o reaproveitamento do código e a separação da interface de usuário das demais camadas.</p>
+          <button class="btn btn-outline-light" type="button">Mais</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>MVC</h2>
+          <p>O Nopake utiliza o padrão MVC para separar as camadas de controle, modelo e visual  no desenvolvimento de sua aplicação.</p>
+          <button class="btn btn-outline-secondary" type="button">Mais</button>
+        </div>
+      </div>
+    </div>
+    @include('footer')
